@@ -1,19 +1,29 @@
-TODO LIST
+# Bao Syntax
+
+## TODO LIST
+
 - IR Header info
 - Conventional names for common tasks
 - general purpose instructions
 - SIMD?
 
-# Syntax
+## Syntax
 
-## Table of Contents
-- ### [IR Header](#ir-header)
-- ### [Types](#types)
-- - #### [Basic](#basic)
-- - #### [Array](#array)
-- - #### [Pointer](#pointer)
-- ### [Functions](#function-attributes)
-- - #### [Attributes](#attributes)
+### Table of Contents
+
+- #### [IR Header](#ir-header)
+
+- #### [Types](#types)
+
+- ##### [Basic](#basic)
+
+- ##### [Array](#array)
+
+- ##### [Pointer](#pointer)
+
+- #### [Functions](#function-attributes)
+
+- ##### [Attributes](#attributes)
 
 ## IR Header
 
@@ -22,6 +32,7 @@ pragma v0.1.0
 ```
 
 ## Types
+
 ```ruby
 $type Basic NAME { alignment: u32, size: u32 }
 $type Array NAME $ty_alias u64
@@ -34,11 +45,13 @@ $type Pointer $u8
 ```
 
 ### Basic
+
 ### Array
+
 ### Pointer
 
-
 ## Functions
+
 ```ruby
 @attribute inline always
 @attribute overload i32_add
